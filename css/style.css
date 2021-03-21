@@ -217,6 +217,19 @@ h2 {
 .s-form {
     display: flex;
     padding: 30px 0 65px 0;
+    position: relative;
+    z-index: 1;
+}
+.s-form:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #5b6ced;
+    opacity: .3;
+    z-index: -1;
 }
 .entry-class {
     max-width: 300px;
